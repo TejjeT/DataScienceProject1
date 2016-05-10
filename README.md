@@ -1,5 +1,8 @@
 # Capital One Data Science Bootcamp (May 2016)
 A repo for May 2016  data science training for Capital One.
+## Instructor Contacts
+  * Mark Fenner mark@thisismetis.com
+  * Michael (Mike) Galvin michael@thisismetis.com
 
 ## Resources by topic
 

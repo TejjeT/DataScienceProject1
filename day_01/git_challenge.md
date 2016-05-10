@@ -1,4 +1,5 @@
 # Submitting your first assignment via GitHub! (required)
+* [Caching your GitHub Password in Git](https://help.github.com/articles/caching-your-github-password-in-git/#platform-mac)
 * Make a fork of [the class repo](https://github.com/thisismetis/capitalone-pilottwo) and clone your fork to your computer
 * Make a branch called 'first-steps' on your computer and switch to it.
 * Create a file in the `day_01` directory titled `hello_world.md`, type some text in it, and commit and push your updates to your fork.
