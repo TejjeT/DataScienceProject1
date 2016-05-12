@@ -3,8 +3,8 @@
 - You are working as data science team for a big movie studio.
 
 - This is a team project.
-  - 6 groups
-  - 3-4 people in a team
+  - 7 groups
+  - 4 people in a team (one team of 5)
 
 - The studio is involved in many facets of the movie business
   - Investing in/distributing other movies
@@ -35,7 +35,7 @@
 
 - You will present on Friday afternoon
   - for 5 minutes
-  - to the studio's executives: Irmak and Brian
+  - to the studio's executives: Mark and Mike
   - Presentation can be
     - describing insights learned from the data
     - showing a tool (for example, a model, or a python program) 

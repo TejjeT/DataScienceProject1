@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Capital One Data Science Bootcamp (May 2016)
 A repo for May 2016  data science training for Capital One.
 ## Instructor Contacts
@@ -75,3 +76,6 @@ A repo for May 2016  data science training for Capital One.
 ### Miscellaneous
 - ["Soundtrack" for the class](day_10/soundtrack.md)
 
+=======
+# DataScienceProject1
+>>>>>>> project1/master
