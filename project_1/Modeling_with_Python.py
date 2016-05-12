@@ -34,7 +34,7 @@ def build_numeric_model(movie_df):
         import statsmodels.formula.api as smf
         #build a multivariate reg model
         linmodel_multi_f = smf.ols(formula='domestic_gross ~ opening_per_theater + opening_weekend_take + production_budget + widest_release + worldwide_gross', data=movie_df).fit()
-        return linmodel_multi_f.summary()
+        linmodel_multi_f.summary()
 
 
 #Challenge 19
@@ -43,9 +43,8 @@ def build_more_model(movie_df):
         This function add additional features and test the model out.
         """
         #number of theaters open to
-        movie_df['number_of_theaters_open']= movie_df['opening_weekend_take']/movie['opening_per_theater']
-        movie_df['title_length']= len(movie_df['alt_title'])
-
+        movie_df['number_of_theaters_open']= movie_df['opening_weekend_take']/movie_df['opening_per_theater']
+        movie_df['title_length']=[len(n) for n in movie_df['alt_title']]
         #create some models
         import statsmodels.formula.api as smf
         #build a multivariate reg model
@@ -59,8 +58,8 @@ def create_dummy_feature(movie_df):
         """
         movie_df.director.value_counts()[:5]
         N = 4
-        top_directors = movies.director.value_counts().index[:N]
-        top_dir_movies = movies[movies['director'].isin(top_directors)]
+        top_directors = movie_df.director.value_counts().index[:N]
+        top_dir_movies = movie_df[movie_df['director'].isin(top_directors)]
         dummies = pd.get_dummies(top_dir_movies['director'])
         movie_df_dir = pd.merge(movie_df, dummies, left_index=True,  right_index=True, how='left')
         #fill in missing value for the directors to 0
