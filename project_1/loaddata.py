@@ -8,13 +8,14 @@ CapitalOne Metis Data Science Python Bootcamp Pilot Extravaganza 2K15.
 import os
 import json
 import pprint
+import pandas as pd
 
 # constants
 CURRENT_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.abspath(os.path.join(CURRENT_DIR, 'data'))
 MOJO_DIR = os.path.join(DATA_DIR, 'boxofficemojo')
 
-def get_boxofficemojo_movies():
+def load_mojo_data():
     file_contents = os.listdir(MOJO_DIR)
 
     movie_list = []
